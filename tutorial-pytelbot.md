@@ -16,7 +16,7 @@ Telegram provides a very useful set of bot features and functions, as well as a 
 
 This tutorial assumes you have already created a bot, and that you have access to the bot's token. It also assumes you're using python 3, and have installed telepot and Flask.
 
-## Why Webhooks? (Seriously, what a hassle)
+## Why Webhooks? (seriously, what a hassle)
 
 Telegram provides two ways to get bot updates, one is by calling getUpdates and the other is a webhook. Calling getUpdates sends a request to the Telegram servers, fetching the most recent information from your bot and giving it to you for processing. While this is helpful, it isn't what Telegram prefers for bots, and eventually a getUpdates loop will shut off on its own. A webhook on the other hand is essentially a bot as a server, and when it's set up Telegram is given the server address to automatically push all bot updates to via HTTPS, which can then processed by the bot code. It's a frustrating process when you don't know what's going on, but to put it simply Telegram wants to automatically send information to you instead of getting a bunch of requests from you all the time. 
 
