@@ -14,7 +14,7 @@ Telegram provides a very useful set of bot features and functions, as well as a 
 
 ## Assumptions
 
-This tutorial assumes you have already created a bot, and that you have access to the bot's token. It also assumes you're using python 3, and have installed telepot and Flask.
+This tutorial assumes you have already created a bot, and that you have access to the bot's token. It also assumes you're using python 3, and have installed telepot and Flask. You also need to make sure that whatever port your bot runs on is open publicly, or to Telegram's requests specifically. More info on that available [here](https://core.telegram.org/bots/webhooks)
 
 ## Why Webhooks? (seriously, what a hassle)
 
