@@ -96,7 +96,6 @@ webhook = OrderedWebhook(bot, {'chat': handle,})
 ```
 Once we have the Flask server set up, we will set up the /webhook route to receive GET and POST requests from Telegram automatically, feeding them to the bot's webhook
 ```python
-# uses Flask to accept Telegram GET and POST requests at /webhook
 @app.route("/webhook", methods=['GET', 'POST'])
 def get_data():
 	webhook.feed(request.data)
